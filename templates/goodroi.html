@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Investment Analysis Complete
+{% endblock %}
+
+{% block main %}
+<h2 class="blackandwhite">Company name: {{ name }} | Return on Investment: {{ roi }}%</h2>
+<br>
+<div class="left">
+    <h4 class="white">Returns that could have been made on other investments:</h4>
+    <ul class="white">
+        <li>S&P 500 Index: 8%</li>
+        <li>US Treasury Yield: 1.35%</li>
+        <li>Interest Earned on a Savings Account: 6%</li>
+    </ul>
+</div>
+<br>
+<h4 class="blackandwhite">According to FinAn's analysis...</h4>
+<h5 class="blackandwhite">This investment is good! It beats the average return of the S&P 500 Index, the current 10-year US Treasury Yield, and the average American savings account</h5>
+<br>
+<h6 class="greenwhite">Make sure to check the folder in which the my_app.py program exists to find a graphical interpretation of your investment analysis in a file called analysis.png!</h6> 
+{% endblock %}

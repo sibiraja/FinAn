@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Discussion Forum
+{% endblock %}
+
+{% block main %}
+<h3 class="blackandwhite">The FinAn Community</h2>
+<div class="container">
+    <table class="table tablestriped center">
+        <thead>
+            <tr>
+                <th class="text-start">Username</th>
+                <th class="text-start">Post</th>
+                <th class="text-start">Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in forum %}
+                <tr>
+                    <td class="left">{{ row["username"] }}</td>
+                    <td class="left">{{ row["post"] }}</td>
+                    <td class="left">{{ row["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

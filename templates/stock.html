@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Analysis
+{% endblock %}
+
+{% block main %}
+<h3 class="blackandwhite">Enter a company's ticker below to analyze the company's stock and find out if it is worth currently buying.</h3>
+<br>
+<form action="/stock" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text" required>
+    </div>
+    <button type="submit">Evaluate!</button>
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create a post
+{% endblock %}
+
+{% block main %}
+<h3 class="blackandwhite">Post a message to the discussion forum!</h2>
+<br>
+<form action="/createpost" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="message" placeholder="Type your post here" type="text" required>
+    </div>
+    <button type="submit">Submit Post</button>
+</form>
+{% endblock %}

@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Learn about Finance
+{% endblock %}
+
+{% block main %}
+<div>
+  <h3 class="blackandwhite">Stock Evaluation</h3>
+  <p class="greenwhite">A company's stock can be analyzed in multiple ways, but FinAn uses the multiples approach. The multiples approach is a term that is used in the financial industry, and it refers to
+    calculating various financial ratios and analyzing those calculations. Each multiple gives a unique perspective into the company in question and points to if the company is overvalued or undervalued by the market.
+    A company that is undervalued could potentially be a good investment since it means that the market is not valuing the company as high enough and the company's share price will likely increase.
+    The multiples that are used in the Stock Evaluation component of FinAn are Price to Earnings, Price to Book, Enterprise Value to EBITDA, Price to Sales, Price to Earnings-to-Growth, and Dividend Yield. 
+    Click on each of the multiples below to learn more about each one.
+  </p>
+</div>
+<!-- Code from Bootstrap was used to make the accordion on this page -->
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Price to Earnings (PE)
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left">The PE Ratio compares a company's share price to its earnings. It helps investors understand if a stock is overvalued or undervalued by the market depending on
+        how high or low the ratio is. The ratio is calculated by taking the share price and dividing it by the earnings per share (a number that represents how much profit a company makes per share).
+        Generally speaking, a PE ratio of less than 15 indicates that the company is undervalued. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Price to Book (PB)
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left">The Price to Book ratio relates a company's share price as deemed by the market to the company's share price as deemed by its accounting and financial statements.
+        This ratio helps investors understand if the market is overvaluing or undervaluing a company because the book value per share reflects what should be the true share price. A PB ratio of less than 1
+        generally indicates that the company is undervalued.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Enterprise Value to EBITDA (EV/EBITDA)
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left">Enterprise Value to EBITDA (earnings before interest, taxes, depreciation, and amortization) is a ratio that measures the relationship between a company's total value
+        (including debt) and its profits before other factors come into play (since earnings after taxes and interest are deducted don't capture a firm's full profitability in some sense).
+        Generally speaking, an EV/EBITDA ratio of less than 10 means the company is undervalued. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Price to Sales (PS)
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left">The Price to Sales ratio measures the relationship between the market's value of a share compared to how much sales were made by each share of the company. This ratio is
+        extremely useful for companies that may not be temporarily making profits due to other reasons but still show some good potential of making future profits since sales are still occurring. Investors can determine if the
+        market is correctly taking a company's sales into account. A PS ratio of less than 1 means that that the company is most likely undervalued.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Price to Earnings-to-Growth (PEG)
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left"> The Price to Earnings-to-Growth ratio compares a company's PE ratio (a ratio that relates a company's share price to its earnings per share)
+        to its growth rate of earnings (how much its earnings will increase or decrease). This ratio tells investors is a company is valued properly by the market by taking expected future growth into account. In most situations, 
+        a PEG ratio of less than 1 means that the company is undervalued.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Dividend Yield (DY)
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body left">The Dividend Yield (DY) ratio relates how much a company pays in dividends (money given to shareholders for each share they hold) to the company's stock price.
+        It shows investors the future dividends that can be expected from a company if a share of that company was to be brought at the current price. The ratio points at a company's ability to generate returns for shareholders,
+        indicating whether or not the stock should be bought at a particular price. For most scenarios, A DY that is greater than 6% means that the company has a high dividend yield, which can be attractive to investors.
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h3 class="blackandwhite">Investment Analysis</h3>
+    <p class="greenwhite center"> A particular investment can be analyzed by calculating the percent change between the final value of the investment and the original value of the investment. When calculating the final value of the investment, it is crucial
+      to take into account any additional factors that may be associated with the investment itself, such as dividends that are given as well as commission costs paid to a trading service. The percentage change calculation essentially
+      gives investors the return that was made on the investment, which is known as ROI (Return on Investment). This percentage can be compared to other forms of investments such as the average ROI of investing in the S&P 500 Index,
+      US Treasury bonds, and earning interest on a savings account to determine whether or not if money was well spent on a specific investment. 
+    </p>
+  </div>
+  <br>
+  <hr>
+  <h6 class="black"><b><i>Information from <a href="https://www.investopedia.com/">Investopedia</a> and <a href="https://www.harvardfac.org">Harvard Financial Analysts Club</a> was used to construct this page</i></b></h6>
+</div>
+{% endblock %}

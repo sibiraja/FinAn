@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Investment Analysis
+{% endblock %}
+
+{% block main %}
+<h3 class="blackandwhite">Enter information regarding your investment in the fields below to calculate the return you made and find out if your investment was good.</h2>
+<br>
+<form action="/investment" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text" required>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="num_shares" placeholder="Number of Shares" required>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="buy_price" placeholder="Buy Price" required>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="sell_price" placeholder="Sell Price" required>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="dividends" placeholder="Earned Dividends" required>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" name="commissions" placeholder="Commission Costs" required>
+    </div>
+    <button type="submit">Analyze!</button>
+</form>
+{% endblock %}

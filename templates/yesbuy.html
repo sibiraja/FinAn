@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Evaluation Complete
+{% endblock %}
+
+{% block main %}
+<h2 class="blackandwhite">Company name: {{ name }} | Stock Price: ${{ price }}</h2>
+<br>
+<div class="left">
+    <h4 class="white">Financial Ratios for the company:</h4>
+    <ul class="white">
+        <li>Price to Earnings: {{ pe }}</li>
+        <li>Price to Book: {{ pb }}</li>
+        <li>Enterprise Value to EBITDA: {{ evebitda }}</li>
+        <li>Price to Sales: {{ ps }}</li>
+        <li>Price to Earnings-to-Growth: {{ peg }}</li>
+        <li>Dividend Yield: {{ dy }}</li>
+    </ul>
+</div>
+<br>
+<h4 class="white left">Calculated Score for the company: {{ score }} / 6</h4>
+<hr>
+<h2 class="blackandwhite">According to FinAn's analysis...</h2>
+<h3 class="blackandwhite">The stock is currently a buy. You can invest and expect to earn returns!</h3>
+{% endblock %}

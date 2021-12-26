@@ -1,0 +1,81 @@
+.center
+{
+    text-align: center;
+}
+
+.left
+{
+    text-align: left;
+}
+
+.bar
+{
+    background-color: #38a3a5;
+}
+
+.blackandwhite
+{
+    background-color: black;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.mb-5 small
+{
+    color: black;
+}
+
+table
+{
+    background-color: white;
+}
+
+.greenwhite
+{
+    background-color: darkgreen;
+    color: white;
+}
+
+.white
+{
+    color: white;
+}
+
+.black
+{
+    color: black;
+}
+
+a
+{
+    color: white;
+}
+
+h6
+{
+    text-align: center;
+}
+
+/* The background image is from Getty Images */
+body
+{
+    background-image: url('finance.jpg');
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Size and font for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+    font-family: 'Impact', sans-serif;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #38a3a5;
+}
+nav .navbar-brand .green
+{
+    color: darkgreen;
+}
